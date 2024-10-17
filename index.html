@@ -132,6 +132,139 @@
         </section>
 
         <section>
+          <img
+            src="./img/11.jpeg"
+            style="position: relative; height: 60vh; width: auto; margin: 0px"
+          />
+        </section>
+
+        <section>
+          <img
+            src="./img/12.jpeg"
+            style="position: relative; height: 60vh; width: auto; margin: 0px"
+          />
+        </section>
+
+        <section>
+          <img
+            src="./img/13.jpeg"
+            style="position: relative; height: 60vh; width: auto; margin: 0px"
+          />
+        </section>
+
+        <section>
+          <img
+            src="./img/14.jpeg"
+            style="position: relative; height: 60vh; width: auto; margin: 0px"
+          />
+        </section>
+
+        <section>
+          <img
+            src="./img/15.jpeg"
+            style="position: relative; height: 60vh; width: auto; margin: 0px"
+          />
+        </section>
+
+        <section>
+          <img
+            src="./img/16.jpeg"
+            style="position: relative; height: 60vh; width: auto; margin: 0px"
+          />
+        </section>
+
+        <section>
+          <img
+            src="./img/17.jpeg"
+            style="position: relative; height: 60vh; width: auto; margin: 0px"
+          />
+        </section>
+
+        <section>
+          <img
+            src="./img/18.jpeg"
+            style="position: relative; height: 60vh; width: auto; margin: 0px"
+          />
+        </section>
+
+        <section>
+          <img
+            src="./img/19.jpeg"
+            style="position: relative; height: 60vh; width: auto; margin: 0px"
+          />
+        </section>
+
+        <section>
+          <img
+            src="./img/20.jpeg"
+            style="position: relative; height: 60vh; width: auto; margin: 0px"
+          />
+        </section>
+
+        <section>
+          <img
+            src="./img/21.jpeg"
+            style="position: relative; height: 60vh; width: auto; margin: 0px"
+          />
+        </section>
+
+        <section>
+          <img
+            src="./img/22.jpeg"
+            style="position: relative; height: 60vh; width: auto; margin: 0px"
+          />
+        </section>
+
+        <section>
+          <img
+            src="./img/23.jpeg"
+            style="position: relative; height: 60vh; width: auto; margin: 0px"
+          />
+        </section>
+
+        <section>
+          <img
+            src="./img/24.jpeg"
+            style="position: relative; height: 60vh; width: auto; margin: 0px"
+          />
+        </section>
+
+        <section>
+          <img
+            src="./img/25.jpeg"
+            style="position: relative; height: 60vh; width: auto; margin: 0px"
+          />
+        </section>
+
+        <section>
+          <img
+            src="./img/26.jpeg"
+            style="position: relative; height: 60vh; width: auto; margin: 0px"
+          />
+        </section>
+
+        <section>
+          <img
+            src="./img/27.jpeg"
+            style="position: relative; height: 60vh; width: auto; margin: 0px"
+          />
+        </section>
+
+        <section>
+          <img
+            src="./img/28.jpeg"
+            style="position: relative; height: 60vh; width: auto; margin: 0px"
+          />
+        </section>
+
+        <section>
+          <img
+            src="./img/29.jpeg"
+            style="position: relative; height: 60vh; width: auto; margin: 0px"
+          />
+        </section>
+
+        <section>
           <video id="eventVideo1" controls autoplay muted>
             <source src="./vdo/1.mp4" type="video/mp4" />
             Contact support///
@@ -163,9 +296,21 @@
         progress: true,
         slideNumber: true,
         fragments: true,
-        loop: true,
+        loop: false, // Set to false to prevent looping
         autoSlide: 40000,
         autoSlideStoppable: true,
+      });
+
+      Reveal.on("slidechanged", (event) => {
+        const totalSlides = Reveal.getTotalSlides();
+        const currentSlide = event.indexh + 1; // +1 to convert to 1-based index
+
+        // Check if we are on the last slide
+        if (currentSlide === totalSlides) {
+          setTimeout(() => {
+            location.reload(); // Reload the page after a brief delay
+          }, 5000); // 5000ms = 5 seconds
+        }
       });
     </script>
 
