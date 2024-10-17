@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maha Garga Competition Sponsors</title>
+    <link rel="stylesheet" href="dist/reveal.css" />
+    <link rel="stylesheet" href="dist/theme/black.css" id="theme" />
+    <style>
+      .text-animate {
+        animation: fadeIn 1s forwards;
+      }
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      .slides {
+        /* width: 960px;
+        height: 700px;
+        inset: 50% auto auto 50%;
+        transform: translate(-50%, -50%) scale(1.05326); */
+
+        padding: 0px;
+      }
+
+      .section {
+        margin: 0px !important;
+        padding: 0px !important;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section>
+          <h1 class="text-animate">Welcome to the Maha Garga Competition</h1>
+          <p>18 Oct 2024</p>
+        </section>
+
+        <section>
+          <img
+            src="./img/main1.jpeg"
+            style="position: relative; height: 60vh; width: auto; margin: 0px"
+          />
+        </section>
+
+        <section>
+          <img
+            src="./img/main2.jpeg"
+            style="position: relative; height: 60vh; width: auto; margin: 0px"
+          />
+        </section>
+
+        <section>
+          <h1 class="text-animate">Our Sponsors !!!</h1>
+        </section>
+
+        <section>
+          <img
+            src="./img/1.jpeg"
+            style="position: relative; height: 60vh; width: auto; margin: 0px"
+          />
+        </section>
+
+        <section>
+          <img
+            src="./img/2.jpeg"
+            style="position: relative; height: 60vh; width: auto; margin: 0px"
+          />
+        </section>
+
+        <section>
+          <img
+            src="./img/3.jpg"
+            style="position: relative; height: 60vh; width: auto; margin: 0px"
+          />
+        </section>
+
+        <section>
+          <img
+            src="./img/4.jpeg"
+            style="position: relative; height: 60vh; width: auto; margin: 0px"
+          />
+        </section>
+
+        <section>
+          <img
+            src="./img/5.jpeg"
+            style="position: relative; height: 60vh; width: auto; margin: 0px"
+          />
+        </section>
+
+        <section>
+          <img
+            src="./img/6.jpeg"
+            style="position: relative; height: 60vh; width: auto; margin: 0px"
+          />
+        </section>
+
+        <section>
+          <img
+            src="./img/7.png"
+            style="position: relative; height: 60vh; width: auto; margin: 0px"
+          />
+        </section>
+
+        <section>
+          <img
+            src="./img/8.jpeg"
+            style="position: relative; height: 60vh; width: auto; margin: 0px"
+          />
+        </section>
+
+        <section>
+          <img
+            src="./img/9.jpeg"
+            style="position: relative; height: 60vh; width: auto; margin: 0px"
+          />
+        </section>
+
+        <section>
+          <img
+            src="./img/10.jpeg"
+            style="position: relative; height: 60vh; width: auto; margin: 0px"
+          />
+        </section>
+
+        <section>
+          <video id="eventVideo1" controls autoplay muted>
+            <source src="./vdo/1.mp4" type="video/mp4" />
+            Contact support///
+          </video>
+        </section>
+
+        <section>
+          <video id="eventVideo2" controls autoplay muted>
+            <source src="./vdo/2.mp4" type="video/mp4" />
+            Contact support///
+          </video>
+        </section>
+
+        <section>
+          <h2 class="text-animate">Thank you 😊</h2>
+          <p>All Sponsors!!!</p>
+          <p>All Participants!!!</p>
+        </section>
+      </div>
+    </div>
+
+    <script src="dist/reveal.js"></script>
+    <script>
+      Reveal.initialize({
+        autoplay: true,
+        transition: "slide", // none/fade/slide/convex/concave/zoom
+        transitionSpeed: "fast",
+        controls: false,
+        progress: true,
+        slideNumber: true,
+        fragments: true,
+        loop: true,
+        autoSlide: 40000,
+        autoSlideStoppable: true,
+      });
+    </script>
+
+    <script>
+      const videos = [
+        document.getElementById("eventVideo1"),
+        document.getElementById("eventVideo2"),
+      ];
+
+      videos.forEach((video) => {
+        video.onplay = () => {
+          setTimeout(() => {
+            video.muted = false; // Unmute the video after 1 second
+          }, 1000); // 1000ms = 1 second
+        };
+      });
+    </script>
+  </body>
+</html>
